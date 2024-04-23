@@ -6,7 +6,7 @@ p {margin: 0;}
 html, body{
  font-family: 'Noticia Text', serif;
    font-size: 100%;
-   background:#272626; 
+   background:#000; 
 }
 body a{
 	transition:0.5s all;
@@ -968,7 +968,7 @@ ul.contact-social li a i.google:hover{
 }
 /*--footer--*/
 #footer-section{
-    background-color: #272626;
+    background-color: #000;
 }
 .footer-nav {
     margin-bottom: 100px;
