@@ -5,7 +5,7 @@ p {margin: 0;}
 html, body{
  font-family: 'Noticia Text', serif;
    font-size: 100%;
-   background:#fff; 
+   background:#272626; 
 }
 body a{
 	transition:0.5s all;
@@ -77,13 +77,14 @@ ul.nav-list li a {
 	        margin:0px 15px; 
 	        text-decoration: none; 
 			text-transform: uppercase;
-	        color:#000;
-	        font-size:14px;
+	        color:#928a66;
+	        font-size:20px;
+			font-weight: bold;
 	        -webkit-transition: all 0.5s ease;
 			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease; }
-ul.nav-list li a:hover { color:#333333; border-bottom: 3px solid #000000; padding-bottom: 3px;}
+ul.nav-list li a:hover { color:#fff; border-bottom: 3px solid #928a66; padding-bottom: 3px;}
 .logo a:hover{
     border: none !important;
 	padding-bottom: 0px !important;
@@ -103,6 +104,20 @@ ul.nav-list li a:hover { color:#333333; border-bottom: 3px solid #000000; paddin
 }
 #about{
     display: block;
+	overflow: hidden;
+}
+
+.orcamento {
+	background: url(../images/testimonial-background.jpg)no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 300px;
+	display: block;
 	overflow: hidden;
 }
 .about_left {
@@ -154,7 +169,7 @@ ul.nav-list li a:hover { color:#333333; border-bottom: 3px solid #000000; paddin
 	transition: all 0.3s;
 }
 .button-box:hover, .button-box:active {
-	color:#fff;
+	color:#cfbe73;
 	text-decoration:none;
 }
 .about_right {
@@ -435,7 +450,7 @@ i.like{
     z-index: 1;
 }
 .team-grid-2{
-	background-image: url(../images/team-member-1.jpg);
+	background-image: url(../images/amelio-galeria/rosto-peb-small.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -930,7 +945,7 @@ ul.contact-social li a i.google:hover{
 }
 /*--footer--*/
 #footer-section{
-    background-color: #AEAEAE;
+    background-color: #272626;
 }
 .footer-nav {
     margin-bottom: 100px;
