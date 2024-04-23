@@ -1,3 +1,4 @@
+/* #928a66 */
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -45,7 +46,7 @@ button {
     font-size: 40px;
 }
 .header {
-	background: url(../images/banner.jpg)no-repeat center top;
+	background: url(../images/banner3.jpg)no-repeat center top;
 	background-size: 100% 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -95,6 +96,7 @@ ul.nav-list li a:hover { color:#fff; border-bottom: 3px solid #928a66; padding-b
 	margin-top:20px;
     margin-right: 10px;
     float: right; 
+	background-color: #928a66;
   }
 #mobile-nav { display:none; }
 /***--- About Section ---***/
@@ -105,6 +107,27 @@ ul.nav-list li a:hover { color:#fff; border-bottom: 3px solid #928a66; padding-b
 #about{
     display: block;
 	overflow: hidden;
+}
+
+.fa-socialmedia {
+	padding: 20px;
+	font-size: 30px !important;
+	width: 80px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+.fa-instagram {
+	background: #c1558b;
+	color: white;
+}
+.fa-whatsapp {
+	background:#25d366;
+	color: white;
 }
 
 .orcamento {
@@ -435,7 +458,7 @@ i.like{
 	overflow: hidden;
 }
 .team-grid-1 {
-    background-image: url("../images/team-background.jpg");
+    background-image: url("../images/amelio-galeria/tiago-sketch.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center;
@@ -771,7 +794,7 @@ ul.popup_links.g_links {
 .mobile-display-off{display: block;}
 /*--contact--*/
 .contact{
-	background:#e7e5d0;
+	background:#e7e5d0af;
 	padding:8em 0;
 }
 .contact-form {
@@ -974,5 +997,5 @@ ul.contact-social li a i.google:hover{
 	height: 48px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/move-to-top.png) no-repeat 0px 0px;
+	background: url(../images/amelio-galeria/zap-icon.png) no-repeat 0px 0px;
 }

@@ -17,6 +17,7 @@
 			<link rel="stylesheet" href="css/style.css" type='text/css'>
 			<link rel="stylesheet" href="css/prettyPhoto.css" type='text/css'>
 			<link rel="stylesheet" href="css/responsive.css" type='text/css'>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			
 			<!-- Animation CSS -->
 			<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
@@ -40,6 +41,9 @@
 			<script type="text/javascript" src="js/modernizr.js"></script>
 			<script type="text/javascript" src="js/retina.js"></script>
 			<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="js/wow.min.js"></script>
 			<script>
 				 new WOW().init();
@@ -66,14 +70,12 @@
 									<nav class="nav">
 										<a id="menu-toggle" class="anchor-link" href="#"><img src="images/nav.png" alt="" /></a>
 										<ul class="nav-list" id="menu">
-											<li><a href="#">Home</a></li>
 											<li><a href="#about" class="scroll">Quem sou</a></li>
+											<li><a href="#depoimentos" class="scroll">Depoimentos</a></li>
 											<li><a href="#gallery" class="scroll">Galeria</a></li>
 											<!-- logo -->
 											 <!--<li class="logo"><a href="index.html"><img src="images/amelio-galeria/logo2.png" alt=""/></a></li>-->
 											<!-- logo -->
-											<li><a href="#faq" class="scroll">Depoimentos</a></li>
-											<li><a href="#find" class="scroll">Endereço</a></li>
 											<li><a href="#contact" class="scroll">Contato</a></li>
 										</ul>
 									</nav>
@@ -97,82 +99,110 @@
 					</div>
 			</header>
 
+			<section id="gallery-one-image-section"> <!-- About Gallery Part -->
+			
+				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+				<h2 class="w3-validation">For W3 Validation</h2>
+				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+				
+						<div class="container-fluid">
+							<div class="row">
+								<div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
+									<ul class="about_gallery">
+										<li>
+											<div class=" b-animate-go thickbox"> <!-- Gallery one image no : 1 -->
+													<img src="images/amelio-galeria/leoa-antebraco-peb.webp" class="gallery-one-image img-responsive" alt=""/> 
+											</div>
+										</li>
+										<li>
+											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 2 -->
+													<img src="images/amelio-galeria/areatrabalho.jpg" class="gallery-one-image img-responsive" alt=""/>
+											</div>
+										</li>
+										<li>
+											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 3 -->
+													<img src="images/amelio-galeria/tiago-sketch.jpg" class="gallery-one-image img-responsive" alt=""/> 
+											</div>
+										</li>
+										<li>
+											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 4 -->
+													<img src="images/amelio-galeria/maquina.jpg" class="gallery-one-image img-responsive" alt=""/>
+											</div>
+										</li>
+										<li>
+											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 5 -->
+													<img src="images/amelio-galeria/floral3-color.jpg" class="gallery-one-image img-responsive" alt=""/>
+													
+											</div>
+										</li>
+										<li>
+											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 6 -->
+													<img src="images/amelio-galeria/stencil.jpg" class="gallery-one-image img-responsive" alt=""/> 
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>	
+						</div>
+				</section>
+			
+			<section id="about-section"> <!-- Team Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+				<div class="container-fluid">  
+						<div class="row" id="about">
+					    <div class="team">
+							<div class='team_div'>
+								<div class="col-md-6 team-grid-3 wow fadeInRight" data-wow-delay="0.3s" style="margin-bottom: -100px;">
+									<div class="about_text" style="margin-top: -100px !important;">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+									</div>
+										<h3>Tiago Freitas</h3> <!-- Team Member One -->
+										<p>Tiago Freitas é o Tatuador do Amélio Tattoo.</p>
+										<br>
+										<p>Lorem ipsum dolor sit amet. 33 possimus exercitationem aut facere nemo non unde quasi est dolor distinctio. Id dolor nihil ut delectus numquam vel distinctio deleniti et perferendis consequatur non provident ullam. In impedit repellendus est minus omnis vel amet officiis quo omnis velit! Ut nemo dolores ea architecto facere qui provident reprehenderit sed officiis atque a debitis mollitia</p>
+								</div>
+								<div class="col-md-6 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section id="testimonial-section"> <!-- Testimonial Section -->
 			
 				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 				<h2 class="w3-validation">For W3 Validation</h2>
 				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 				
-				<div class="container-fluid">  
+				<div class="orcamento">
 					<div class="row">
-						<div class="col-md-12 orcamento">
-							<a target="_blank" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento"
-							 class="button-one about_btn button-type-one button-box" >Solicitar orçamento</a>
+						<div class="col-md-12">
+							<h1 style="color: #fff;">Agende já o seu horário</h1>
 						</div>
 					</div>
-				</div>
-			</section>
-
-            <section id="about-section"> <!-- About Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-					<div class="container-fluid">  
-						<div class="row" id="about">
-							<div class="col-md-6 about_left">
-							     <a href="#" class="button-one about_btn button-type-one button-box" onclick= yes_js_login(event)>Quem Sou</a>
-							</div>
-							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s">
-								  <div class="about_text">
-										<img src="images/tatto.png" class="img-responsive" alt=""/>
-										<h2>Tatuador e Designer</h2>
-										<p>Que prazer receber você aqui!</p>
-										<p>Sou o Tiago Freitas, tatuador e designer à frente do estúdio Amélio Tattoo.</p>
-										<br>
-										<p>Lorem ipsum dolor sit amet. A modi nulla id dolores suscipit aut voluptatem deleniti aut voluptas totam vel dolorum provident hic tempore possimus. Et illo voluptatem a dolores voluptates est vero voluptate non optio dolorum. 33 accusamus velit in fugit galisum a quisquam culpa est maiores perspiciatis aut ipsum quia et minima eligendi.</p>
-										<br>
-										<b>Uma história por trás de cada arte</b>
-								  </div>
-							</div>
-						</div> 
-					 
+					<div class="row">
+						<div class="col-md-12">
+							<h3 style="color: #f6d923;">Entre em contato</h3>
+						</div>
 					</div>  
-            </section>
-			
-			<section id="team-section"> <!-- Team Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<div class="container-fluid">
+					<br>
 					<div class="row">
-					    <div class="team">
-							<div class='team_div'>
-								    <div class="col-md-4 team-grid-1 wow fadeInLeft" data-wow-delay="0.3s">
-									    <a href="#" class="button-one team_btn button-type-one button-box">Tatuador e Designer</a>
-								    </div>
-							        <div class="col-md-4 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
-									<div class="col-md-4 team-grid-3 wow fadeInRight" data-wow-delay="0.3s">
-											<h3>Tiago Freitas</h3> <!-- Team Member One -->
-											<p>Tiago Freitas é o Tatuador do Amélio Tattoo.</p>
-											<br>
-											<p>Lorem ipsum dolor sit amet. 33 possimus exercitationem aut facere nemo non unde quasi est dolor distinctio. Id dolor nihil ut delectus numquam vel distinctio deleniti et perferendis consequatur non provident ullam. In impedit repellendus est minus omnis vel amet officiis quo omnis velit! Ut nemo dolores ea architecto facere qui provident reprehenderit sed officiis atque a debitis mollitia</p>
-											 <ul class="social">
-												<li><a href=""> <i class="fb"> </i> </a></li>
-												<!--<li><a href=""><i class="tw"> </i> </a></li>
-												<li><a href=""><i class="tumb"> </i> </a></li>
-												<li><a href=""><i class="linked"> </i> </a></li>
-												<li><a href=""><i class="google"> </i> </a></li> !-->
-												<li><a href=""><i class="pinterest"> </i> </a></li>
-											</ul>
-									</div>
-						            <div class="clearfix"> </div>
-						    </div>
+						<div class="col-md-12">
+							<a target="_blank" class="fa fa-facebook fa-socialmedia" href="https://www.facebook.com/profile.php?id=61551990467630"></a>
+							<a target="_blank" class="fa fa-instagram fa-socialmedia" href="https://www.instagram.com/amelio_tattoodesigner/"></a>
+							<a target="_blank" class="fa fa-whatsapp fa-socialmedia" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento"></a>
 						</div>
 					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<h4 style="color: #f6d923;">Uma história por trás de cada arte</h4>
+						</div>
+					</div> 
 				</div>
 			</section>
 			
@@ -182,14 +212,58 @@
 			<h2 class="w3-validation">For W3 Validation</h2>
 			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
-			        <div class="twitter-div wow bounceInUp"  data-wow-delay="0.0s" id="find">
+			        <div class="twitter-div wow bounceInUp"  data-wow-delay="0.0s" id="depoimentos">
 						<div class="container">
 							<div class="row">
-							    <i class="tw_icon"> </i>
-								<h3 style="color: #fff;">Fiz uma tatuagem com ele o bang ficou monstrão</h3>
-								<p>- Fábio Magrelo</p>
+							    <i class=""> </i>
+								<h3 style="color: #fff;">Veja depoimentos dos nossos clientes</h3>
+								<br>
+								<br>
 							</div>
 						</div>
+						<div class="container">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							  </ol>
+						  
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+						  
+								<div class="item active">
+									<p>Já fiz diversas tatuagens com o Tiago. Recomendo muito o trabalho dele</p>
+									<h3 style="color: #f6d923;"> - Fábio</h3>
+								  <img src="images/amelio-galeria/mini-coruja-peb.webp" alt="Depoimento Fábio" style="width:400px; max-height: 500px; margin: auto; display: block;">
+								</div>
+						  
+								<div class="item">
+									<p>Precisei retocar uma tatuagem de outro artista. O Tiago foi preciso no retoque</p>
+									<h3 style="color: #f6d923;"> - Patrick</h3>
+								  	<img src="images/amelio-galeria/ptk-marquesan.jpeg" alt="Depoimento Patrick" style="width:400px; max-height: 500px; margin: auto; display: block;">
+								</div>
+							  
+								<div class="item">
+									<p>Encontrei o Tiago pelo instagram. Exelente atendimento</p>
+									<h3 style="color: #f6d923;"> - Fulano</h3>
+								  <img src="images/amelio-galeria/mandachuva-color.jpeg" alt="Depoimento Fulano" style="width:400px; max-height: 500px; margin: auto; display: block;">
+								</div>
+							
+							  </div>
+						  
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+						  </div>
                     </div>
 			</section>
 			
@@ -200,455 +274,211 @@
 			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
 				<div class="container-fluidgallery wow fadeInDown" data-wow-delay="0.0s" id="gallery">
-					        <div class="row">
-								    <div class="gallery-title">
-									    <a href="#" class="button-one gallery_btn button-type-one button-box">Meus trabalhos</a>
-								    </div>
-									<div class="gallery-two-row-one">
-											<ul class="gallery-grid-one gallery-grid-box">
-												<li>
-													<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 1 -->
-															<img src="images/amelio-galeria/andorinha-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-																<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/amelio-galeria/andorinha-peb.webp" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																	<!--<ul class="popup_links gallery-two-popup-links">
-																		<li><button><i class="link"></i></button></li>
-																		<li><button><i class="info"></i></button></li>
-																		<li><button><i class="like"></i></button></li>
-																	</ul>!-->
-																</div>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 2 -->
-															<img src="images/amelio-galeria/caes-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-																<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/amelio-galeria/caes-peb.webp" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																	<!--<ul class="popup_links gallery-two-popup-links">
-																		<li><button><i class="link"></i></button></li>
-																		<li><button><i class="info"></i></button></li>
-																		<li><button><i class="like"></i></button></li>
-																	</ul>!-->
-																</div>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 3 -->
-															<img src="images/amelio-galeria/floral-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-																<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/amelio-galeria/floral-peb.webp" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																	<!--<ul class="popup_links gallery-two-popup-links">
-																		<li><button><i class="link"></i></button></li>
-																		<li><button><i class="info"></i></button></li>
-																		<li><button><i class="like"></i></button></li>
-																	</ul>!-->
-																</div>
-														</div>
-													</div>
-												</li>											
-												
-											</ul>
-											<div class="clearfix"></div>
-									</div>
-							</div>
+					<div class="row">
+						<div class="container orcamento">
 							<div class="row">
-							    <div class="col-md-12">
-								    <div class="gallery-two-row-two wow fadeInLeft">
-									    <ul class="gallery-grid-two gallery-grid-box">
-										    <li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 4 -->
-													    <img src="images/amelio-galeria/ano-color.jpeg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/amelio-galeria/ano-color.jpeg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 5 -->
-													    <img src="images/amelio-galeria/ghibli-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/amelio-galeria/ghibli-peb.webp" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 6 -->
-													    <img src="images/amelio-galeria/desenho-color.jpeg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/amelio-galeria/desenho-color.jpeg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 7 -->
-													    <img src="images/amelio-galeria/leoa-antebraco-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/leoa-antebraco-peb.webp" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 8 -->
-													    <img src="images/amelio-galeria/silhueta-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/silhueta-peb.webp" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											
-											<!-- Only For Mobile -->
-											<li class="mobile-display-on">
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 9 -->
-													    <img src="images/amelio-galeria/morty-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/morty-peb.webp" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<!-- Only For Mobile -->
-											
-										</ul>
-										<div class="clearfix"></div>
-									</div>
-								</div>
+								<i class=""> </i>
+								<br><br><br><br><br><br>
+								<h1 style="color: #fff; text-shadow: 3px 3px #000; font-weight: bold;">Meus Trabalhos</h1>
+								<br>
+								<br>
 							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="gallery-two-row-three wow fadeInRight">
-									    <ul class="gallery-grid-three gallery-grid-box">
-										    <li class="mobile-display-off">
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 9 -->
-													    <img src="images/amelio-galeria/mini-coruja-peb.webp" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/mini-coruja-peb.webp" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 10 -->
-													    <img src="images/gallery-two-img10.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/photo-gallery/image-10.jpg" rel="prettyPhoto[pp_gal]">
-															    <button class="zooming md-trigger">
-																        <img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 11 -->
-													    <img src="images/gallery-two-img11.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-11.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 12 -->
-													    <img src="images/gallery-two-img12.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-12.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 13 -->
-													    <img src="images/gallery-two-img13.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-13.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											
-											<!-- Only For Mobile -->
-											<li class="mobile-display-on">
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 14 -->
-													    <img src="images/gallery-two-img14.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-14.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li class="mobile-display-on">
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 15 -->
-													    <img src="images/gallery-two-img15.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-15.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<!-- Only For Mobile -->
-											
-										</ul>
-										 <div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="gallery-two-row-four wow fadeInUp">
-									    <ul class="gallery-grid-four gallery-grid-box">
-										    <li class="mobile-display-off">
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 14 -->
-													    <img src="images/gallery-two-img14.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-14.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li class="mobile-display-off">
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 15 -->
-													    <img src="images/gallery-two-img15.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-15.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 16 -->
-													    <img src="images/gallery-two-img16.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-16.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 17 -->
-													    <img src="images/gallery-two-img17.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-17.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 18 -->
-													    <img src="images/gallery-two-img18.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-18.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<!--<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>!-->
-															</div>
-														</div>
-												</div>
-										    </li>
-										</ul>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-							<div class="md-overlay"></div><!-- the overlay element -->
-		
+						</div>
+					</div>
 				</div>
 			</section>
+			
+			<section id="gallery-one-image-section"> <!-- About Gallery Part -->
+			
+				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+				<h2 class="w3-validation">For W3 Validation</h2>
+				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+				
+						<div class="container-fluid">
+							<div class="row">
+								<div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
+									<ul class="about_gallery">
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 1 -->
+													<img src="images/amelio-galeria/andorinha-peb.webp" class="gallery-one-image img-responsive" alt=""/> 
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/1.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 2 -->
+													<img src="images/amelio-galeria/ano-color.jpeg" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/2.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 3 -->
+													<img src="images/amelio-galeria/barquinho-color.jpg" class="gallery-one-image img-responsive" alt=""/> 
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/3.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 4 -->
+													<img src="images/amelio-galeria/floral2-color.jpg" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/amelio-galeria/ano-color.jpeg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 5 -->
+													<img src="images/amelio-galeria/lobo-cristal-peb.webp" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/amelio-galeria/ano-color.jpeg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 6 -->
+													<img src="images/amelio-galeria/gato-color.jpg" class="gallery-one-image img-responsive" alt=""/> 
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/6.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="gallery-one-bottom">
+									<ul class="about_gallery wow fadeInRight" data-wow-delay="0.3s">
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 7 -->
+													<img src="images/amelio-galeria/leoa-braco-color.webp" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/7.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 8 -->
+													<img src="images/amelio-galeria/letras-tempo-color.jpg" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/amelio-galeria/ano-color.jpeg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 9 -->
+													<img src="images/amelio-galeria/mariposa-color.jpg" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/9.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 10 -->
+													<img src="images/amelio-galeria/morty-peb.webp" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/10.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 11 -->
+													<img src="images/amelio-galeria/silhueta-peb.webp" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/11.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															</div>
+													</div>
+											</div>
+										</li>
+										<li>
+											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 12 -->
+													<img src="images/amelio-galeria/ghibli-peb.webp" class="gallery-one-image img-responsive" alt=""/>
+													<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/about-gallery/12.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming about-zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+															</div>
+													</div>
+											</div>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>	
+						</div>
+				</section>
 			
 			<section id="contact-section"> <!-- Contact info Section-->
 			
@@ -658,34 +488,31 @@
 			
 			        <div class="contact"  data-wow-delay="0.0s" id="contact">
 					       	<div class="container">
-							       	<div class="col-md-12 contact-left wow fadeInLeft">
-   			                            <a href="#" class="button-one contact_btn button-type-one button-box">Endereço</a>
-   			                            <h2>Amélio Tattoo está bem perto de você, no jardim jacira.</h2>
+							       	<div class="col-md-12 contact-left wow fadeInLeft" style="margin-top: -60px; margin-bottom: -90px;">
+   			                            <h1><b>Endereço</b></h1>
+   			                            <h3>Amélio Tattoo está bem perto de você, no Jardim Jacira</h3>
 										<br>
 										<div class="contact-info">
 												<ul class="contact-list-one">
 												   <li><h5>Endereço:</h5></li>
 												   <li>Rua : <span class="bold">Santos Dumont, 1000 - Jardim Jacira - Itapecerica da Serra</span></li>
+												   <br>
 												   <li>
 													<span>
 														<div class="col-md-2">
-															Telefone:
+															Contato:
 														</div> 
-														<a target="_blank" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento">
-															<div style="background-color: green; color: #fff;" class="col-md-2">
-																<img src="images/amelio-galeria/whatsapp.svg" alt="Whatsapp" title="Whatsapp" height="24" width="24">
-																<span class="texto">WhatsApp</span>
-															</div>
-														</a>
+														<div class="col-md-12">
+															<a target="_blank" style="color: #fff; font-weight: normal !important;" class="fa fa-facebook fa-socialmedia" href="https://www.facebook.com/profile.php?id=61551990467630"></a>
+															<a target="_blank" style="color: #fff; font-weight: normal !important;" class="fa fa-instagram fa-socialmedia" href="https://www.instagram.com/amelio_tattoodesigner/"></a>
+															<a target="_blank" style="color: #fff; font-weight: normal !important;" class="fa fa-whatsapp fa-socialmedia" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento"></a>
+														</div>
 												   	</span>
 													</li>
 												</ul>
-												<div class="clearfix"> </div>
-										</div>
-										<ul class="contact-social">
-											<li><a href=""> <i class="fb"> </i> </a></li>
-											<li><a href=""><i class="pinterest"> </i> </a></li>
-										</ul>
+												
+												<span class="bold">ou clique no mapa abaixo:</span>
+												
 									</div>
    	                        </div>
 					</div>
@@ -716,14 +543,12 @@
 					<div class="row">
 					    <nav class="footer-nav">
 						    <ul class="nav-list wow fadeInDown" id="footer-menu">
-							    <li><a href="#">Home</a></li>
-								<li><a href="#about" class="scroll">Quem Sou</a></li>
+								<li><a href="#about" class="scroll">Quem sou</a></li>
+								<li><a href="#depoimentos" class="scroll">Depoimentos</a></li>
 								<li><a href="#gallery" class="scroll">Galeria</a></li>
 								<!-- logo -->
-								<!--<li class="logo"><a href="index.html"><img src="images/amelio-galeria/logo2.png" alt=""/></a></li>-->
+									<!--<li class="logo"><a href="index.html"><img src="images/amelio-galeria/logo2.png" alt=""/></a></li>-->
 								<!-- logo -->
-								<li><a href="#faq" class="scroll">Depoimentos</a></li>
-								<li><a href="#find" class="scroll">Endereço</a></li>
 								<li><a href="#contact" class="scroll">Contato</a></li>
 							</ul>
 						</nav>
@@ -750,13 +575,15 @@
 								scrollSpeed: 1200,
 								easingType: 'linear' 
 					 		};
-							*/
+							
 							
 							$().UItoTop({ easingType: 'easeOutQuart' });
-							
+							*/
 						});
 			</script>
 			
-			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			<a id="toTop" style="display: block;" target="_blank" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento">
+				<span id="toTopHover" style="opacity: 1;"> </span>
+			</a>
 		</body>
 </html>		
