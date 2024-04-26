@@ -999,3 +999,11 @@ ul.contact-social li a i.google:hover{
 	text-indent: 100%;
 	background: url(../images/amelio-galeria/zap-icon.png) no-repeat 0px 0px;
 }
+
+.fa-angle-right {
+	margin-top: 300px;
+}
+
+.fa-angle-left {
+	margin-top: 300px;
+}
