@@ -242,6 +242,12 @@ ul.nav-list li a:hover { color:#fff; border-bottom: 3px solid #928a66; padding-b
     max-width: 270px;
     max-height: 270px;
 }
+.gallery-one-image-fit {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+}
 .popup-links-button{
 
 }
