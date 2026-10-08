@@ -1,635 +1,252 @@
-<!DOCTYPE HTML>
-<html>
-		<head>
-		
-		    <meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-			
-			<!-- Title -->
-			<title>Amélio Tattoo Designer</title>
-			
-			<!-- Bootstrap & Font-Awesome CSS -->
-			<link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
-			<link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'>
-			
-			<!-- Custom CSS -->
-			<link rel="stylesheet" href="css/style.css" type='text/css'>
-			<link rel="stylesheet" href="css/prettyPhoto.css" type='text/css'>
-			<link rel="stylesheet" href="css/responsive.css" type='text/css'>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			
-			<!-- Animation CSS -->
-			<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-			
-			<!-- Google Webfont -->
-			<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel="stylesheet" type='text/css'>
-			
-			<!-- js files & script -->
-			<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-			<script type="text/javascript" src="js/hover_pack.js"></script>
-			<script type="text/javascript">
-								jQuery(document).ready(function($) {
-									$(".scroll").click(function(event){		
-										event.preventDefault();
-										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-									});
-								});
-			</script>
-			<script type="text/javascript" src="js/move-top.js"></script>
-			<script type="text/javascript" src="js/easing.js"></script>
-			<script type="text/javascript" src="js/modernizr.js"></script>
-			<script type="text/javascript" src="js/retina.js"></script>
-			<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-			
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="js/wow.min.js"></script>
-			<script>
-				 new WOW().init();
-			</script>
-			
-		</head>
-		<body>
-		
-            <header id="header"> <!-- Header Part -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-					<div class="header">
-						<div class="container">
-								<!-- start-top-nav -->
-								<div class="top-nav">
-									<div class="top-header">
-										<!--<div class="responsive-logo">
-										   <a href="index.html"><img src="images/amelio-galeria/logo2.png" alt=""/></a>
-										</div>-->
-									</div>
-									<nav class="nav">
-										<a id="menu-toggle" class="anchor-link" href="#"><img src="images/nav.png" alt="" /></a>
-										<ul class="nav-list" id="menu">
-											<li><a href="#about" class="scroll">Quem sou</a></li>
-											<li><a href="#depoimentos" class="scroll">Depoimentos</a></li>
-											<li><a href="#gallery" class="scroll">Galeria</a></li>
-											<!-- logo -->
-											 <!--<li class="logo"><a href="index.html"><img src="images/amelio-galeria/logo2.png" alt=""/></a></li>-->
-											<!-- logo -->
-											<li><a href="#contact" class="scroll">Contato</a></li>
-										</ul>
-									</nav>
-									<script type="text/javascript">
-										  $(document).ready(function() {
-										
-											$('#menu-toggle').click(function () {
-											  $('#menu').toggleClass('open');
-											  e.preventDefault();
-											});
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Amélio Tattoo Designer · Tatuagem em Itapecerica da Serra</title>
+  <meta name="description" content="Tiago Amélio, tatuador e designer em Itapecerica da Serra - SP. Fine-line, floral, animais, pets, cartoons e projetos exclusivos. Agende pelo WhatsApp.">
+  <meta name="theme-color" content="#110d0b">
+  <link rel="canonical" href="https://www.ameliotattoo.com.br/">
+  <link rel="icon" href="assets/img/besouro.png">
 
-											yes_js_login = function(e) {
-												e.preventDefault();
-											}
-											
-										});
-									</script>
-								</div>
-							<!-- End-top-nav -->
-						</div>
-					</div>
-			</header>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Amélio Tattoo Designer">
+  <meta property="og:description" content="Uma história por trás de cada arte. Tatuagens autorais em Itapecerica da Serra - SP.">
+  <meta property="og:image" content="https://www.ameliotattoo.com.br/images/amelio-galeria/leao-braco.jpg">
+  <meta property="og:url" content="https://www.ameliotattoo.com.br/">
+  <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="assets/js/main.js" defer></script>
 
-<!-- INICIO **- FOTOS CABEÇALHO -**  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TattooParlor",
+    "name": "Amélio Tattoo Designer",
+    "url": "https://www.ameliotattoo.com.br/",
+    "image": "https://www.ameliotattoo.com.br/images/amelio-galeria/leao-braco.jpg",
+    "telephone": "+55 11 93738-6993",
+    "founder": { "@type": "Person", "name": "Tiago Amélio" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Itapecerica da Serra", "addressRegion": "SP", "addressCountry": "BR" },
+    "sameAs": [
+      "https://www.instagram.com/ameliotattoodesigner/",
+      "https://www.facebook.com/profile.php?id=61551990467630"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ícones reutilizados pelo site -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M7.5 2.75h9a4.75 4.75 0 0 1 4.75 4.75v9a4.75 4.75 0 0 1-4.75 4.75h-9A4.75 4.75 0 0 1 2.75 16.5v-9A4.75 4.75 0 0 1 7.5 2.75Z"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21.5v-8h2.7l.4-3.1h-3.1V8.4c0-.9.25-1.5 1.55-1.5h1.65V4.1a22 22 0 0 0-2.4-.12c-2.38 0-4 1.45-4 4.12v2.3H7.6v3.1h2.7v8Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M12 21s-6.75-5.7-6.75-11.25a6.75 6.75 0 0 1 13.5 0C18.75 15.3 12 21 12 21Z"/><circle cx="12" cy="9.75" r="2.25" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </svg>
 
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-			<section id="gallery-one-image-section"> <!-- About Gallery Part -->
-			
-				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-				<h2 class="w3-validation">For W3 Validation</h2>
-				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-				
-						<div class="container-fluid">
-							<div class="row">
-								<div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
-									<ul class="about_gallery">
-										<li>
-											<div class=" b-animate-go thickbox"> <!-- Gallery one image no : 1 -->
-													<img src="images/amelio-galeria/leao-braco-peb-edt.jpg" class="gallery-one-image img-responsive" alt=""/> 
-											</div>
-										</li>
-										<li>
-											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 2 -->
-													<img src="images/amelio-galeria/fineline-costas3-edt.jpg"  class="gallery-one-image-fit img-responsive" alt=""/>
-											</div>
-										</li> 
-										<li>
-											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 3 -->
-													<img src="images/amelio-galeria/garca-peb-edt.jpg" class="gallery-one-image img-responsive" alt=""/> 
-											</div>
-										</li>
-										<li>
-											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 4 -->
-													<img src="images/amelio-galeria/tatuando-peb-edt2.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-											</div>
-										</li>
-										<li>
-											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 5 -->
-													<img src="images/amelio-galeria/novo-leoa-antebraco-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													
-											</div>
-										</li>
-										<li>
-											<div class="b-animate-go thickbox"> <!-- Gallery one image no : 6 -->
-													<img src="images/amelio-galeria/coringa-peb-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/> 
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>	
-						</div>
-				</section>
-			
-			
-			
-<!-- FINAL **- FOTOS CABEÇALHO -**  -->			
-			
-			
-			<section id="about-section"> <!-- Team Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<div class="container-fluid">  
-						<div class="row" id="about">
-					    <div class="team">
-							<div class='team_div'>
-								<div class="col-md-6 team-grid-3 wow fadeInRight" data-wow-delay="0.3s" style="margin-bottom: -100px;">
-									<div class="about_text" style="margin-top: -130px !important;">
-										<img src="images/tatto2.png" style="max-width: 30%;"/>
-									</div>
-									<div class="about_text" style="margin-top: -30px !important;">
-										<h3>Tiago Amélio</h3> <!-- Team Member One -->
-										<p style="margin-top: -40px !important; ">Com o diferencial de ser um Designer, Tiago Amélio é o tatuador à frente do estúdio Amélio Tattoo Designer. 
-											Aqui você tem liberdade para criar seu projeto.
-										</p>
-										<br>
-										<p>
-											São diversas artes criadas como: Tatuagens Pequenas e Delicadas, Fine-Line, Cartoons, 
-											Flash-Tattoos, Animais Selvagens, Pets, Tatuagens Pessoais para Entes Queridos e Floral, que é o tipo de trabalho favorito desse artista.
-										</p>
-										<br>
-										<p>
-											Agende agora mesmo um horário e faça uma visita ao nosso estúdio.
-										</p>
-									</div>
-								</div>
-								<div class="col-md-6 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</section>
+  <header class="topbar" data-topbar>
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#topo" aria-label="Amélio Tattoo — início">
+        <img src="assets/img/besouro.png" alt="" width="20" height="36">
+        <span>Amélio <em>Tattoo</em></span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
+        <span></span><span></span><span class="sr">Menu</span>
+      </button>
+      <nav class="nav" id="menu" data-menu>
+        <a href="#sobre">Quem sou</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#processo">Processo</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#instagram">Instagram</a>
+        <a href="cuidados/index.html">Cuidados</a>
+        <a class="btn btn--small" href="#contato">Agendar</a>
+      </nav>
+    </div>
+  </header>
 
-			<section id="testimonial-section"> <!-- Testimonial Section -->
-			
-				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-				<h2 class="w3-validation">For W3 Validation</h2>
-				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-				
-				<div class="orcamento">
-					<div class="row">
-						<div class="col-md-12">
-							<br>
-							<h1 style="color: #fff;">Agende já o seu horário</h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<h3 style="color: #bbab62;">Entre em contato</h3>
-						</div>
-					</div>  
-					
-					<div class="row">
-						<div class="col-md-12">
-							<a target="_blank" class="fa fa-instagram fa-socialmedia" href="https://www.instagram.com/amelio_tattoodesigner/"></a>
-							<a target="_blank" class="fa fa-whatsapp fa-socialmedia" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento"></a>
-							<a target="_blank" class="fa fa-facebook fa-socialmedia" href="https://www.facebook.com/profile.php?id=61551990467630"></a>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-md-12">
-							<h4 style="color: #bbab62;">Uma história por trás de cada arte</h4>
-						</div>
-					</div> 
-				</div>
-			</section>
-			
-			<section id="twitter-section"> <!-- Twitter Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-			        <div class="twitter-div wow bounceInUp"  data-wow-delay="0.0s" id="depoimentos">
-						<div class="container">
-							<div class="row">
-							    <i class=""> </i>
-								<h3 style="color: #fff;">Veja depoimentos dos nossos clientes</h3>
-								<br>
-								<br>
-							</div>
-						</div>
-						<div class="container">
-							<div id="myCarousel" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-								<li data-target="#myCarousel" data-slide-to="1"></li>
-								<li data-target="#myCarousel" data-slide-to="2"></li>
-							  </ol>
-						  
-						  
-						  
-<!-- INICIO **- FOTOS CARROSSEL -**  --> 
-						  
-						  
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner">
-						  
-								<div class="item active">
-									<p>Já fiz diversas tatuagens com o Tiago. Recomendo muito o trabalho dele</p>
-									<h3 style="color: #bbab62;"> - Rafaela</h3>
-								  <img src="images/amelio-galeria/cobraperna3-carrossel.jpg" alt="Depoimento Fábio" style="width:400px; max-height: 500px; margin: auto; display: block;">
-								</div>
-						  
-								<div class="item">
-									<p>Precisei retocar uma tatuagem de outro artista. O Tiago foi preciso no retoque</p>
-									<h3 style="color: #bbab62;"> - Patrick</h3>
-								  	<img src="images/amelio-galeria/ptk-marquesan.jpeg" alt="Depoimento Patrick" style="width:400px; max-height: 500px; margin: auto; display: block;">
-								</div>
-							  
-								<div class="item">
-									<p>Encontrei o trabalho Tiago pelo instagram. Tive um exelente atendimento</p>
-									<h3 style="color: #bbab62;"> - Gabys</h3>
-								  <img src="images/amelio-galeria/mandachuva-color-crl.jpeg" alt="Depoimento Fulano" style="width:400px; max-height: 500px; margin: auto; display: block;">
-								</div>
-							
-							  </div>
-							  
-							  
-<!-- FINAL **- FOTOS CABEÇALHO -**  -->
-							  
-							  
-						  
-							  <!-- Left and right controls -->
-							  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-								<span class="fa fa-angle-left"></span>
-								<span class="sr-only">Previous</span>
-							  </a>
-							  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-								<span class="fa fa-angle-right"></span>
-								<span class="sr-only">Next</span>
-							  </a>
-							</div>
-						  </div>
-                    </div>
-			</section>
-			
-			<section id="gallery-two-image-section"> <!-- Gallery Two Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<div class="container-fluidgallery wow fadeInDown" data-wow-delay="0.0s" id="gallery">
-					<div class="row">
-						<div class="container orcamento">
-							<div class="row">
-								<i class=""> </i>
-								<br><br><br><br><br><br>
-								<h1 style="color: #bbab62; text-shadow: 5px 5px #000; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px;">Galeria</h1>
-								<br>
-								<br>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			
-			
-<!-- INICIO **- FOTOS GALERIA -**  -->
+  <main id="conteudo">
+    <!-- Topo -->
+    <section class="hero" id="topo">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Itapecerica da Serra · SP</p>
+          <h1 class="hero__title reveal">
+            Amélio
+            <span><em>Tattoo</em> Designer</span>
+          </h1>
+          <p class="hero__lead reveal">Uma história por trás de cada arte. Tatuagens autorais, desenhadas do zero para a sua pele.</p>
+          <div class="hero__cta reveal">
+            <a class="btn" data-whatsapp target="_blank" rel="noopener" href="https://wa.me/5511937386993">
+              <svg class="ico"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#galeria">Ver trabalhos <svg class="ico"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="hero__art reveal">
+          <div class="arch">
+            <img data-site="fotoTopo" src="images/amelio-galeria/novo-leoa-antebraco-edt.jpg" alt="Tatuagem de leoa com flores no braço" width="540" height="540" fetchpriority="high">
+          </div>
+          <img class="hero__beetle" src="assets/img/besouro.png" alt="" aria-hidden="true">
+        </figure>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Fine-line</span><span>Floral</span><span>Animais</span><span>Pets</span><span>Cartoon</span><span>Flash Tattoo</span><span>Blackwork</span><span>Homenagens</span>
+          <span>Fine-line</span><span>Floral</span><span>Animais</span><span>Pets</span><span>Cartoon</span><span>Flash Tattoo</span><span>Blackwork</span><span>Homenagens</span>
+        </div>
+      </div>
+    </section>
 
+    <!-- Quem sou -->
+    <section class="section about" id="sobre">
+      <div class="wrap about__grid">
+        <figure class="about__photo reveal">
+          <img data-site="fotoPerfil" src="images/amelio-galeria/img/rosto-peb.jpeg" alt="Retrato do tatuador Tiago Amélio" width="3008" height="2000" loading="lazy">
+          <figcaption>Tiago Amélio</figcaption>
+        </figure>
+        <div class="about__text">
+          <p class="eyebrow reveal">Quem sou</p>
+          <h2 class="title reveal">Designer de formação,<br><em>tatuador por paixão.</em></h2>
+          <p class="reveal">Com o diferencial de ser designer, Tiago Amélio é o tatuador à frente do estúdio Amélio Tattoo Designer. Aqui você tem liberdade para criar o seu projeto — cada desenho nasce da sua história e é feito sob medida para o seu corpo.</p>
+          <p class="reveal">Tatuagens pequenas e delicadas, fine-line, cartoons, flash tattoos, animais selvagens, pets, homenagens a quem você ama e, claro, floral — o estilo favorito do artista.</p>
+          <ul class="chips reveal" aria-label="Estilos">
+            <li>Floral</li><li>Fine-line</li><li>Animais</li><li>Pets</li><li>Cartoon</li><li>Flash</li><li>Homenagens</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <!-- Galeria -->
+    <section class="section gallery" id="galeria">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal">Portfólio</p>
+          <h2 class="title reveal">Galeria</h2>
+        </div>
+        <div class="filters" role="toolbar" aria-label="Filtrar por estilo" data-filters hidden></div>
+        <ul class="masonry" data-gallery aria-live="polite"></ul>
+        <noscript><p class="muted">Ative o JavaScript para ver a galeria, ou acesse o <a href="https://www.instagram.com/ameliotattoodesigner/">Instagram</a>.</p></noscript>
+        <div class="center"><button class="btn btn--ghost" type="button" data-more hidden>Ver mais trabalhos</button></div>
+      </div>
+    </section>
 
-			
-			<section id="gallery-one-image-section"> <!-- About Gallery Part -->
-			
-				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-				<h2 class="w3-validation">For W3 Validation</h2>
-				<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-				
-						<div class="container-fluid">
-							<div class="row">
-								<div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
-									<ul class="about_gallery">
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 1 -->
-													<img src="images/amelio-galeria/andorinha-peb-edt.jpg" class="gallery-one-image img-responsive" alt=""/> 
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/andorinha-peb.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 2 -->
-													<img src="images/amelio-galeria/novo-leoa-antebraco-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/novo-leoa-antebraco.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 3 -->
-													<img src="images/amelio-galeria/ano-color-edt.jpg" class="gallery-one-image img-responsive" alt=""/> 
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/ano-color.webp" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 4 -->
-													<img src="images/amelio-galeria/mariposa-peb.webp" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/mariposa-peb.webp" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 5 -->
-													<img src="images/amelio-galeria/fineline-costas3-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/fineline-costas3.jpeg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 6 -->
-													<img src="images/amelio-galeria/dog-line-peb-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/> 
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/dog-line.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-									</ul>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="gallery-one-bottom">
-									<ul class="about_gallery wow fadeInRight" data-wow-delay="0.3s">
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 7 -->
-													<img src="images/amelio-galeria/adaga-peb-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/amelio-galeria/adaga-peb.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 8 -->
-													<img src="images/amelio-galeria/libelula3-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/libelula3.jpeg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 9 -->
-													<img src="images/amelio-galeria/leoa-antebraco-peb-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/leoa-antebraco-color.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 10 -->
-													<img src="images/amelio-galeria/floral-pulseira-peb-edt.jpeg" class="gallery-one-image img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/floral-pulseira-peb.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 11 -->
-													<img src="images/amelio-galeria/floral-braco-lateral-edt.jpeg" class="gallery-one-image img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/amelio-galeria/floral-braco-lateral.jpg"prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															</div>
-													</div>
-											</div>
-										</li>
-										<li>
-											<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 12 -->
-													<img src="images/amelio-galeria/pernambuco-peb-edt.jpg" class="gallery-one-image-fit img-responsive" alt=""/>
-													<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/amelio-galeria/pernambuco-peb.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming about-zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-															</div>
-													</div>
-											</div>
-										</li>
-									</ul>
-									<div class="clearfix"></div>
-								</div>
-							</div>	
-						</div>
-				</section>
-			
-			
-			
-<!-- FINAL **- FOTOS CABEÇALHO -**  -->
-			
-			
-			
-			<section id="contact-section"> <!-- Contact info Section-->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-			        <div class="contact"  data-wow-delay="0.0s" id="contact">
-					       	<div class="container">
-							       	<div class="col-md-12 contact-left wow fadeInLeft" style="margin-top: -60px; margin-bottom: -90px; color: #fff;">
-   			                            <h1><b>Contato</b></h1>
-   			                            <h3>Amélio Tattoo Designer está bem perto de você, na cidade de Itapecerica da Serra - SP</h3>
-										<br>
-										<div class="contact-info" style="margin-top: 0px; ">
-												<ul class="contact-list-one">
-												   <!--<li><h5 style="color: #fff">Endereço:</h5></li>
-												   <li><span class="bold" style="color: #fff"> Rua Santos Dumont, 1000 - Jardim Jacira - Itapecerica da Serra</span></li>
-												   <br> -->
-												   <li>
-													<span>
-														<div class="col-md-2" ></div>
-														<div class="col-md-2" style="color: #fff;">
-															Entre em Contato:
-														</div> 
-														<div class="col-md-8">
-															<a target="_blank" style="color: #fff; font-weight: normal !important;" class="fa fa-instagram fa-socialmedia" href="https://www.instagram.com/amelio_tattoodesigner/"></a>
-															<a target="_blank" style="color: #fff; font-weight: normal !important;" class="fa fa-whatsapp fa-socialmedia" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento"></a>
-															<a target="_blank" style="color: #fff; font-weight: normal !important;" class="fa fa-facebook fa-socialmedia" href="https://www.facebook.com/profile.php?id=61551990467630"></a>
-														</div>
-												   	</span>
-													</li>
-												</ul>
-										</div>
-   	                        </div>
-					</div>
-			</section>
-		
-			<!--
-			<section id="map-section"> <!-- Map Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<!--<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<!--<div class="container-fluid">
-					<br>
-					<span class="bold" style="color: #fff;">ou clique no mapa abaixo:</span>
-					<br><br>
-					<div class="row">
-					    <div class="map-div wow fadeInDown">
-						    <a href="https://www.google.com/maps?q=R.+Santos+Dumont,+1010+-+Jardim+Jacira"><img src="images/amelio-galeria/map.jpg" alt="" /></a>
-						</div>
-					</div>
-				</div>
-			</section>
-		-->
-			<section id="footer-section"> <!-- Footer Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<div class="container">
-					<div class="row">
-					    <nav class="footer-nav">
-						    <ul class="nav-list wow fadeInDown" id="footer-menu">
-								<li><a href="#about" class="scroll">Quem sou</a></li>
-								<li><a href="#depoimentos" class="scroll">Depoimentos</a></li>
-								<li><a href="#gallery" class="scroll">Galeria</a></li>
-								<!-- logo -->
-									<!--<li class="logo"><a href="index.html"><img src="images/amelio-galeria/logo2.png" alt=""/></a></li>-->
-								<!-- logo -->
-								<li><a href="#contact" class="scroll">Contato</a></li>
-							</ul>
-						</nav>
-						<p class="copyright wow fadeInUp" style="color: #272626;">&copy; 2023 Amélio Tattoo. Todos direitos reservados. Developed by Psychotrick</a>.</p>
-					</div>
-				</div>
-			</section>
-			
-			
-			<script type="text/javascript" charset="utf-8">
-			  $(document).ready(function(){
-				$("a[rel^='prettyPhoto']").prettyPhoto();
-			  });
-			</script>
-			
+    <!-- Processo -->
+    <section class="section process" id="processo">
+      <div class="wrap process__grid">
+        <div>
+          <p class="eyebrow reveal">Como funciona</p>
+          <h2 class="title reveal">Da ideia à <em>pele</em></h2>
+          <ol class="steps">
+            <li class="reveal">
+              <span class="steps__n">01</span>
+              <div><h3>Conversa</h3><p>Você conta a sua ideia pelo WhatsApp: referências, local do corpo e tamanho. Juntos definimos o projeto e o orçamento.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="steps__n">02</span>
+              <div><h3>Desenho exclusivo</h3><p>O desenho é criado do zero para você, com olhar de designer, e ajustado até ficar do seu jeito.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="steps__n">03</span>
+              <div><h3>Sessão</h3><p>No dia marcado, material descartável, ambiente higienizado e todas as orientações de <a href="cuidados/index.html">cuidado com a tatuagem</a>.</p></div>
+            </li>
+          </ol>
+        </div>
+        <div class="process__art reveal" data-process>
+          <img src="images/amelio-galeria/img/sketch.jpg" alt="Esboços de desenhos de tatuagem" loading="lazy">
+          <img src="images/amelio-galeria/tatuando-peb2.jpg" alt="Tiago tatuando um cliente" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-			
-			<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							*/
-						});
-			</script>
-			
-			<a id="toTop" style="display: block;" target="_blank" href="https://wa.me/5511937386993?text=Salve%20Tiago,%20Estou%20entrando%20em%20contato%20pelo%20site%20Amelio%20Tattoo%20e%20gostaria%20de%20fazer%20um%20orçamento">
-				<span id="toTopHover" style="opacity: 1;"> </span>
-			</a>
-		</body>
-</html>		
+    <!-- Depoimentos -->
+    <section class="section reviews" id="depoimentos">
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">Depoimentos</p>
+            <h2 class="title reveal">Quem já <em>tatuou</em></h2>
+          </div>
+          <div class="reviews__nav">
+            <button class="round" type="button" data-reviews-prev aria-label="Anterior"><svg class="ico flip"><use href="#i-arrow"/></svg></button>
+            <button class="round" type="button" data-reviews-next aria-label="Próximo"><svg class="ico"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <ul class="reviews__track" data-reviews tabindex="0" aria-label="Depoimentos de clientes"></ul>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section insta" id="instagram">
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">No Instagram</p>
+            <h2 class="title title--handle reveal">@ameliotattoodesigner</h2>
+          </div>
+          <a class="btn btn--ghost reveal" href="https://www.instagram.com/ameliotattoodesigner/" target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-instagram"/></svg> Seguir
+          </a>
+        </div>
+        <ul class="insta__grid" data-insta hidden></ul>
+        <p class="insta__empty muted" data-insta-empty>Acompanhe os trabalhos mais recentes, bastidores e flashes disponíveis direto no Instagram.</p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section contact" id="contato">
+      <div class="wrap contact__box reveal">
+        <img class="contact__beetle" src="assets/img/besouro.png" alt="" aria-hidden="true" loading="lazy">
+        <p class="eyebrow">Agende já o seu horário</p>
+        <h2 class="title">Vamos criar a sua<br><em>próxima história?</em></h2>
+        <p class="contact__place"><svg class="ico"><use href="#i-pin"/></svg> Itapecerica da Serra · SP</p>
+        <div class="contact__actions">
+          <a class="btn" data-whatsapp target="_blank" rel="noopener" href="https://wa.me/5511937386993">
+            <svg class="ico"><use href="#i-whatsapp"/></svg> (11) 93738-6993
+          </a>
+          <a class="round round--lg" href="https://www.instagram.com/ameliotattoodesigner/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-instagram"/></svg></a>
+          <a class="round round--lg" href="https://www.facebook.com/profile.php?id=61551990467630" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ico"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span data-year>2026</span> Amélio Tattoo Designer</p>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="#sobre">Quem sou</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="cuidados/index.html">Cuidados pós-tatuagem</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="muted">Desenvolvido por Trickomas</p>
+    </div>
+  </footer>
+
+  <a class="fab" data-whatsapp target="_blank" rel="noopener" href="https://wa.me/5511937386993" aria-label="Conversar no WhatsApp">
+    <svg class="ico"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <dialog class="lightbox" data-lightbox aria-label="Visualizar tatuagem">
+    <button class="round lightbox__close" type="button" data-lb-close aria-label="Fechar"><svg class="ico"><use href="#i-close"/></svg></button>
+    <button class="round lightbox__prev" type="button" data-lb-prev aria-label="Anterior"><svg class="ico flip"><use href="#i-arrow"/></svg></button>
+    <figure>
+      <img data-lb-img alt="">
+      <figcaption data-lb-caption></figcaption>
+    </figure>
+    <button class="round lightbox__next" type="button" data-lb-next aria-label="Próxima"><svg class="ico"><use href="#i-arrow"/></svg></button>
+  </dialog>
+</body>
+</html>

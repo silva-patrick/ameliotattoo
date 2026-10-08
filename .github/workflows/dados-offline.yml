@@ -1,0 +1,35 @@
+name: Atualizar dados offline
+
+# Mantém content/dados-offline.js em dia com os JSON editados pelo painel,
+# para o site funcionar abrindo o index.html direto do computador.
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/*.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar content/dados-offline.js
+        shell: pwsh
+        run: ./scripts/gerar-dados-offline.ps1
+
+      - name: Salvar no repositório
+        run: |
+          git add content/dados-offline.js
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza dados para visualização offline"
+          git push

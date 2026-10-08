@@ -1,0 +1,92 @@
+# Configuração do painel de edição (Sveltia CMS)
+# Acesse em: https://www.ameliotattoo.com.br/admin/
+
+backend:
+  name: github
+  repo: silva-patrick/ameliotattoo
+  branch: main
+  commit_messages:
+    create: "Painel: cria {{collection}} “{{slug}}”"
+    update: "Painel: atualiza {{collection}} “{{slug}}”"
+    delete: "Painel: remove {{collection}} “{{slug}}”"
+    uploadMedia: "Painel: envia imagem “{{path}}”"
+    deleteMedia: "Painel: remove imagem “{{path}}”"
+
+site_url: https://www.ameliotattoo.com.br
+display_url: https://www.ameliotattoo.com.br
+logo_url: /assets/img/besouro.png
+
+media_folder: images/amelio-galeria
+public_folder: /images/amelio-galeria
+
+# Fotos de celular são convertidas para WebP e reduzidas antes do envio
+media_libraries:
+  default:
+    config:
+      max_file_size: 25000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1800
+          height: 1800
+
+collections:
+  - name: site
+    label: Site
+    editor:
+      preview: false
+    files:
+      - name: galeria
+        label: Galeria de tatuagens
+        file: content/galeria.json
+        format: json
+        fields:
+          - name: fotos
+            label: Fotos
+            label_singular: foto
+            widget: list
+            add_to_top: true
+            collapsed: true
+            summary: "{{fields.titulo}} · {{fields.estilo}}"
+            hint: "A primeira foto da lista aparece primeiro no site. Arraste para reordenar."
+            fields:
+              - { name: imagem, label: Foto, widget: image }
+              - { name: titulo, label: Título, widget: string, hint: "Ex.: Leão e peônias" }
+              - name: estilo
+                label: Estilo
+                widget: select
+                hint: "Usado nos filtros da galeria"
+                options: [Floral, Fine-line, Animais, Pets, Cartoon, Blackwork, Geométrica, Lettering, Colorida, Flash, Homenagem, Outros]
+
+      - name: depoimentos
+        label: Depoimentos
+        file: content/depoimentos.json
+        format: json
+        fields:
+          - name: depoimentos
+            label: Depoimentos
+            label_singular: depoimento
+            widget: list
+            collapsed: true
+            summary: "{{fields.nome}}"
+            fields:
+              - { name: nome, label: Nome do cliente, widget: string }
+              - { name: texto, label: Depoimento, widget: text }
+              - { name: foto, label: Foto da tatuagem, widget: image, required: false }
+
+      - name: destaques
+        label: Fotos de destaque
+        file: content/site.json
+        format: json
+        fields:
+          - { name: fotoTopo, label: "Foto do topo do site", widget: image, hint: "Aparece no arco ao lado do nome. Prefira foto vertical." }
+          - { name: fotoPerfil, label: "Foto do tatuador (Quem sou)", widget: image }
+          - name: fotosProcesso
+            label: "Fotos da seção “Como funciona”"
+            label_singular: foto
+            widget: list
+            min: 2
+            max: 2
+            field: { name: foto, label: Foto, widget: image }
