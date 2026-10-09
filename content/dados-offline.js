@@ -114,9 +114,26 @@ window.SITE_DATA = {
 },
   "depoimentos": {
   "depoimentos": [
-    { "nome": "Rafaela", "texto": "Já fiz diversas tatuagens com o Tiago. Recomendo muito o trabalho dele.", "foto": "/images/amelio-galeria/cobraperna3-carrossel.jpg" },
-    { "nome": "Patrick", "texto": "Precisei retocar uma tatuagem de outro artista. O Tiago foi preciso no retoque.", "foto": "/images/amelio-galeria/ptk-marquesan.jpeg" },
-    { "nome": "Gabys", "texto": "Encontrei o trabalho do Tiago pelo Instagram. Tive um excelente atendimento.", "foto": "/images/amelio-galeria/mandachuva-color-crl.jpeg" }
+    {
+      "nome": "Rafaela",
+      "texto": "Já fiz diversas tatuagens com o Tiago. Recomendo muito o trabalho dele.",
+      "foto": "/images/amelio-galeria/cobraperna3-carrossel.jpg"
+    },
+    {
+      "nome": "Patrick",
+      "texto": "Precisei retocar uma tatuagem de outro artista. O Tiago foi preciso no retoque.",
+      "foto": "/images/amelio-galeria/ptk-marquesan.jpeg"
+    },
+    {
+      "nome": "Gabys",
+      "texto": "Encontrei o trabalho do Tiago pelo Instagram. Tive um excelente atendimento.",
+      "foto": "/images/amelio-galeria/mandachuva-color-crl.jpeg"
+    },
+    {
+      "nome": "Mariana",
+      "texto": "🖤🖤🌿",
+      "foto": "/images/amelio-galeria/img_1819.webp"
+    }
   ]
 },
   "instagram": {
