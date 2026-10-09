@@ -153,6 +153,16 @@ window.SITE_DATA = {
       "nome": "Thais",
       "texto": "🖤🖤🌿",
       "foto": "/images/amelio-galeria/img_1816.webp"
+    },
+    {
+      "nome": "Ana Paula",
+      "texto": "🖤🖤🌿",
+      "foto": "/images/amelio-galeria/img_1815.webp"
+    },
+    {
+      "nome": "Ana Paula",
+      "texto": "🖤🖤🌿",
+      "foto": "/images/amelio-galeria/img_1815.webp"
     }
   ]
 },
