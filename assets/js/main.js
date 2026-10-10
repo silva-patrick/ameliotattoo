@@ -280,11 +280,11 @@ function setupGoogleReviews(data) {
     const estrelas = Math.max(1, Math.min(5, Number(a.estrelas) || 5));
     return el('li', { class: 'greview' }, [
       el('p', { class: 'stars', 'aria-label': `${estrelas} de 5 estrelas`, text: '★'.repeat(estrelas) }),
-      el('blockquote', { text: a.texto }),
-      el('footer', {}, [
+      el('header', { class: 'greview__head' }, [
         el('span', { class: 'greview__avatar', 'aria-hidden': 'true', text: (a.nome || '?').trim().charAt(0).toUpperCase() }),
         el('strong', { text: a.nome || 'Cliente' }),
       ]),
+      el('blockquote', { text: a.texto }),
     ]);
   }));
 

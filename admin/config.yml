@@ -82,10 +82,10 @@ collections:
         format: json
         fields:
           - name: link
-            label: Link do perfil no Google
+            label: Link das avaliações no Google
             widget: string
             required: false
-            hint: "No Google Maps, abra o perfil do estúdio → Compartilhar → Copiar link. Usado no botão “Ver todas no Google”."
+            hint: "Usado no botão “Ver todas no Google”. Pode ser o link do Google Maps (perfil → Compartilhar → Copiar link) ou da busca do Google."
           - { name: nota, label: Nota média, widget: number, value_type: float, min: 1, max: 5, step: 0.1, default: 5 }
           - { name: total, label: Total de avaliações, widget: number, value_type: int, required: false, hint: "Opcional. Ex.: 48" }
           - name: avaliacoes

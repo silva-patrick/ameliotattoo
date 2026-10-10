@@ -209,7 +209,7 @@ window.SITE_DATA = {
   "avaliacoes": {
   "nota": 5,
   "total": 53,
-  "link": "https://maps.app.goo.gl/UrrpSznF5NsuZv9F8",
+  "link": "https://www.google.com/search?q=Am%C3%A9lio+Tattoo+Itapecerica+da+Serra#lrd=0x94ce4df673b46005:0x6c94f57ea482a5f8,1,,,,",
   "avaliacoes": [
     {
       "nome": "Juliana Gomes",

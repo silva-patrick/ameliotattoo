@@ -623,9 +623,9 @@ em { font-style: italic; color: var(--gold); }
   border-radius: var(--radius);
   background: var(--ink-2);
 }
-.greview .stars { margin: 0 0 0.9rem; font-size: 1rem; }
-.greview blockquote { margin: 0 0 1.4rem; color: var(--bone); line-height: 1.65; white-space: pre-line; }
-.greview footer { display: flex; align-items: center; gap: 0.75rem; }
+.greview .stars { margin: 0 0 0.8rem; font-size: 1rem; }
+.greview blockquote { margin: 0; color: var(--bone); line-height: 1.65; white-space: pre-line; }
+.greview__head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
 .greview__avatar {
   display: grid; place-items: center; flex: none;
   width: 2.5rem; height: 2.5rem; border-radius: 50%;
@@ -633,7 +633,7 @@ em { font-style: italic; color: var(--gold); }
   border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
   font-family: var(--serif); font-size: 1.25rem; color: var(--gold);
 }
-.greview footer strong { display: block; font-size: 0.95rem; font-weight: 600; }
+.greview__head strong { display: block; font-size: 0.95rem; font-weight: 600; }
 
 /* alterna o fundo: depoimentos (escuro 2) → avaliações (escuro) → instagram (escuro 2) */
 .insta { background: var(--ink-2); }
