@@ -261,6 +261,7 @@ function setupReviews(data) {
 /* ---------- avaliações do Google ---------- */
 
 const GOOGLE_REVIEWS_MAX = 6;
+const GOOGLE_REVIEW_LONG = 220; // caracteres a partir dos quais o texto recolhe no mobile
 
 function setupGoogleReviews(data) {
   const itens = (data?.avaliacoes ?? []).filter((a) => a.texto).slice(0, GOOGLE_REVIEWS_MAX);
@@ -285,8 +286,20 @@ function setupGoogleReviews(data) {
         el('strong', { text: a.nome || 'Cliente' }),
       ]),
       el('blockquote', { text: a.texto }),
+      // no mobile os textos longos ficam recolhidos (ver CSS); o botão expande
+      a.texto.length > GOOGLE_REVIEW_LONG
+        ? el('button', { type: 'button', class: 'greview__more', 'aria-expanded': 'false', text: 'Ler mais' })
+        : '',
     ]);
   }));
+
+  $('[data-gr-list]').addEventListener('click', (e) => {
+    const btn = e.target.closest('.greview__more');
+    if (!btn) return;
+    const aberto = btn.closest('.greview').classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', aberto);
+    btn.textContent = aberto ? 'Ler menos' : 'Ler mais';
+  });
 
   section.hidden = false;
 }

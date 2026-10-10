@@ -647,3 +647,35 @@ em { font-style: italic; color: var(--gold); }
   /* espaço extra para o botão flutuante do WhatsApp não cobrir o crédito */
   .footer { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px)); }
 }
+
+/* mobile: avaliações em faixa deslizante para não alongar a página */
+@media (max-width: 700px) {
+  .greviews__grid {
+    columns: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 85%;
+    align-items: start;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-bottom: 0.25rem;
+  }
+  .greviews__grid::-webkit-scrollbar { display: none; }
+  .greview { margin-bottom: 0; scroll-snap-align: start; }
+  .greview:has(.greview__more):not(.is-open) blockquote {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    overflow: hidden;
+  }
+  .greview__more {
+    display: inline-block; margin-top: 0.75rem; padding: 0; border: 0; background: none;
+    color: var(--gold); font-size: 0.85rem; font-weight: 600; cursor: pointer;
+    text-decoration: underline; text-underline-offset: 3px;
+  }
+}
+@media (min-width: 701px) { .greview__more { display: none; } }
