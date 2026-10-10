@@ -12,6 +12,7 @@ assets/js/main.js       galeria, lightbox, depoimentos, Instagram, menu
 assets/img/besouro.png  logo (besouro) com fundo transparente
 content/galeria.json    fotos da galeria (título + estilo)
 content/depoimentos.json
+content/avaliacoes.json  avaliações do Google em destaque (até 6) + link do perfil
 content/site.json       foto do topo, foto do tatuador, fotos do "Como funciona"
 content/instagram.json  preenchido automaticamente na publicação
 content/dados-offline.js  cópia dos JSON para abrir o site offline (gerado automaticamente)
@@ -91,5 +92,7 @@ Atenção: o GitHub pausa workflows agendados de repositórios sem nenhum commit
 **Reordenar ou remover:** na mesma tela, arraste as fotos para mudar a ordem ou use o menu de cada foto para removê-la. Depois, **Salvar**.
 
 **Depoimentos:** **Site → Depoimentos** (nome do cliente, texto e uma foto da tatuagem).
+
+**Avaliações do Google:** **Site → Avaliações do Google**. Cadastre até 6 avaliações (copie o texto exatamente como está no Google), a nota, o total e o link do perfil. A seção só aparece no site quando houver pelo menos uma avaliação.
 
 **Fotos de destaque:** **Site → Fotos de destaque** troca a foto grande do topo, a sua foto na seção "Quem sou" e as duas fotos de "Como funciona".

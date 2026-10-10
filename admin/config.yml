@@ -76,6 +76,31 @@ collections:
               - { name: texto, label: Depoimento, widget: text }
               - { name: foto, label: Foto da tatuagem, widget: image, required: false }
 
+      - name: avaliacoes
+        label: Avaliações do Google
+        file: content/avaliacoes.json
+        format: json
+        fields:
+          - name: link
+            label: Link do perfil no Google
+            widget: string
+            required: false
+            hint: "No Google Maps, abra o perfil do estúdio → Compartilhar → Copiar link. Usado no botão “Ver todas no Google”."
+          - { name: nota, label: Nota média, widget: number, value_type: float, min: 1, max: 5, step: 0.1, default: 5 }
+          - { name: total, label: Total de avaliações, widget: number, value_type: int, required: false, hint: "Opcional. Ex.: 48" }
+          - name: avaliacoes
+            label: Avaliações em destaque
+            label_singular: avaliação
+            widget: list
+            collapsed: true
+            max: 6
+            summary: "{{fields.nome}} · {{fields.estrelas}}★"
+            hint: "Até 6 avaliações. Copie o texto exatamente como está no Google. A seção só aparece no site quando houver pelo menos uma."
+            fields:
+              - { name: nome, label: Nome do cliente, widget: string }
+              - { name: texto, label: Texto da avaliação, widget: text }
+              - { name: estrelas, label: Estrelas, widget: number, value_type: int, min: 1, max: 5, default: 5 }
+
       - name: destaques
         label: Fotos de destaque
         file: content/site.json

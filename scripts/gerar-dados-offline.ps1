@@ -14,7 +14,7 @@ $ErrorActionPreference = 'Stop'
 $content = Join-Path (Split-Path -Parent $PSScriptRoot) 'content'
 $utf8 = New-Object System.Text.UTF8Encoding $false
 
-$partes = foreach ($nome in 'site', 'galeria', 'depoimentos', 'instagram') {
+$partes = foreach ($nome in 'site', 'galeria', 'depoimentos', 'avaliacoes', 'instagram') {
   $arquivo = Join-Path $content "$nome.json"
   $json = if (Test-Path $arquivo) { [IO.File]::ReadAllText($arquivo, $utf8).Trim() } else { 'null' }
   "  `"$nome`": $json"

@@ -31,7 +31,7 @@ function loadOffline() {
 
 async function loadContent() {
   if (location.protocol === 'file:') return loadOffline();
-  const nomes = ['site', 'galeria', 'depoimentos', 'instagram'];
+  const nomes = ['site', 'galeria', 'depoimentos', 'avaliacoes', 'instagram'];
   const dados = await Promise.all(nomes.map((n) => loadJSON(`content/${n}.json`)));
   return Object.fromEntries(nomes.map((n, i) => [n, dados[i]]));
 }
@@ -258,6 +258,39 @@ function setupReviews(data) {
   $('[data-reviews-next]').addEventListener('click', () => step(1));
 }
 
+/* ---------- avaliações do Google ---------- */
+
+const GOOGLE_REVIEWS_MAX = 6;
+
+function setupGoogleReviews(data) {
+  const itens = (data?.avaliacoes ?? []).filter((a) => a.texto).slice(0, GOOGLE_REVIEWS_MAX);
+  if (!itens.length) return;
+
+  const section = $('#avaliacoes');
+  const nota = Number(data.nota) || 5;
+  $('[data-gr-nota]').textContent = nota.toFixed(1).replace('.', ',');
+  if (data.total) $('[data-gr-total]').textContent = `${data.total} avaliações no Google`;
+  if (data.link) {
+    const link = $('[data-gr-link]');
+    link.href = data.link;
+    link.hidden = false;
+  }
+
+  $('[data-gr-list]').append(...itens.map((a) => {
+    const estrelas = Math.max(1, Math.min(5, Number(a.estrelas) || 5));
+    return el('li', { class: 'greview' }, [
+      el('p', { class: 'stars', 'aria-label': `${estrelas} de 5 estrelas`, text: '★'.repeat(estrelas) }),
+      el('blockquote', { text: a.texto }),
+      el('footer', {}, [
+        el('span', { class: 'greview__avatar', 'aria-hidden': 'true', text: (a.nome || '?').trim().charAt(0).toUpperCase() }),
+        el('strong', { text: a.nome || 'Cliente' }),
+      ]),
+    ]);
+  }));
+
+  section.hidden = false;
+}
+
 /* ---------- instagram ---------- */
 
 function setupInstagram(data, galeria) {
@@ -286,10 +319,11 @@ setupChrome();
 reveal($$('.reveal'));
 
 if ($('[data-gallery]')) {
-  loadContent().then(({ site, galeria, depoimentos, instagram }) => {
+  loadContent().then(({ site, galeria, depoimentos, avaliacoes, instagram }) => {
     applySite(site);
     setupGallery(galeria);
     setupReviews(depoimentos);
+    setupGoogleReviews(avaliacoes);
     setupInstagram(instagram, galeria);
   });
 }

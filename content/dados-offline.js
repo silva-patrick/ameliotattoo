@@ -203,56 +203,43 @@ window.SITE_DATA = {
       "nome": "Gabys",
       "texto": "Encontrei o trabalho do Tiago pelo Instagram. Tive um excelente atendimento.",
       "foto": "/images/amelio-galeria/mandachuva-color-crl.jpeg"
+    }
+  ]
+},
+  "avaliacoes": {
+  "nota": 5,
+  "total": 53,
+  "link": "https://maps.app.goo.gl/UrrpSznF5NsuZv9F8",
+  "avaliacoes": [
+    {
+      "nome": "Juliana Gomes",
+      "texto": "Minha experiência foi simplesmente maravilhosa!\nFoi minha primeira tatuagem e não poderia ter escolhido um lugar melhor.\nFui recebida com muito cuidado, atenção e simpatia, dá para ver que eles realmente se preocupam com o cliente.\nFiquei encantada com o resultado: o desenho ficou lindo e os traços da tatuagem são perfeitos. Quero agradecer especialmente ao Tiago, pela paciência (principalmente nos momentos de nervosismo rsrs).\nFoi incrível e com certeza voltarei mais vezes. Super indico! 💯🖤",
+      "estrelas": 5
     },
     {
-      "nome": "Mariana",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1819.webp"
+      "nome": "Mariana Silva",
+      "texto": "Amei o resultado, voltei para fazer outra tatuagem e ficou simplesmente perfeita, cada detalhe feita com muito cuidado, ficou perfeito, mais uma vez satisfeita com o resultado ❤️",
+      "estrelas": 5
     },
     {
-      "nome": "Chelly",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1818.webp"
+      "nome": "Chelly SILVA",
+      "texto": "Amei, tatuador super atencioso e educado, fez um trabalho incrível",
+      "estrelas": 5
     },
     {
-      "nome": "Rafaela",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1817.webp"
+      "nome": "Rafaela Carvalho",
+      "texto": "Tatuador excelente, muito atencioso, organizado e detalhista.👏",
+      "estrelas": 5
     },
     {
-      "nome": "Thais",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1816.webp"
+      "nome": "Thais Alessandra",
+      "texto": "um ótimo trabalho e um belo tatuador que sabe fazer o trabalho eu amei",
+      "estrelas": 5
     },
     {
-      "nome": "Thais",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1816.webp"
-    },
-    {
-      "nome": "Ana Paula",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1815.webp"
-    },
-    {
-      "nome": "Ana Paula",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1815.webp"
-    },
-    {
-      "nome": "Juliana",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1812.webp"
-    },
-    {
-      "nome": "Giovanna",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1813.webp"
-    },
-    {
-      "nome": "Natani",
-      "texto": "🖤🖤🌿",
-      "foto": "/images/amelio-galeria/img_1814.webp"
+      "nome": "Ana Paula Noveli",
+      "texto": "Incrível , espaço higiênico organizado, profissional impecável ,traços impecáveis, já tô pensando na próxima e próxima .",
+      "estrelas": 5
     }
   ]
 },
