@@ -11,6 +11,11 @@ window.SITE_DATA = {
   "galeria": {
   "fotos": [
     {
+      "imagem": "/images/amelio-galeria/img_1830.webp",
+      "titulo": "Mickey",
+      "estilo": "Cartoon"
+    },
+    {
       "imagem": "/images/amelio-galeria/img_1831.webp",
       "titulo": "Sol lua",
       "estilo": "Blackwork"
