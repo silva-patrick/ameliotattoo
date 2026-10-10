@@ -11,6 +11,11 @@ window.SITE_DATA = {
   "galeria": {
   "fotos": [
     {
+      "imagem": "/images/amelio-galeria/img_1839.webp",
+      "titulo": "Libelula",
+      "estilo": "Blackwork"
+    },
+    {
       "imagem": "/images/amelio-galeria/img_1580.webp",
       "titulo": "Floral",
       "estilo": "Floral"
