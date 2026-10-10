@@ -11,6 +11,11 @@ window.SITE_DATA = {
   "galeria": {
   "fotos": [
     {
+      "imagem": "/images/amelio-galeria/img_1821.webp",
+      "titulo": "Lirios",
+      "estilo": "Floral"
+    },
+    {
       "imagem": "/images/amelio-galeria/img_1823.webp",
       "titulo": "Preto e cinza",
       "estilo": "Lettering"
