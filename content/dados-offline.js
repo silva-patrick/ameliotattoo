@@ -11,6 +11,11 @@ window.SITE_DATA = {
   "galeria": {
   "fotos": [
     {
+      "imagem": "/images/amelio-galeria/img_1835.webp",
+      "titulo": "Mulher e lobo",
+      "estilo": "Fine-line"
+    },
+    {
       "imagem": "/images/amelio-galeria/img_1836.webp",
       "titulo": "Floral",
       "estilo": "Floral"
