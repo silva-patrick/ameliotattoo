@@ -1,7 +1,7 @@
 // Gerado por scripts/gerar-dados-offline.ps1 - nao edite a mao.
 window.SITE_DATA = {
   "site": {
-  "fotoTopo": "/images/amelio-galeria/novo-leoa-antebraco-edt.jpg",
+  "fotoTopo": "/images/amelio-galeria/img_1833.webp",
   "fotoPerfil": "/images/amelio-galeria/img/rosto-peb.jpeg",
   "fotosProcesso": [
     "/images/amelio-galeria/img/sketch.jpg",
