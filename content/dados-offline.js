@@ -91,11 +91,6 @@ window.SITE_DATA = {
       "estilo": "Floral"
     },
     {
-      "imagem": "/images/amelio-galeria/tag-v2.webp",
-      "titulo": "BPT",
-      "estilo": "Blackwork"
-    },
-    {
       "imagem": "/images/amelio-galeria/leao-braco.jpg",
       "titulo": "Leão e peônias",
       "estilo": "Animais"
