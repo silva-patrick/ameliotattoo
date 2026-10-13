@@ -192,6 +192,7 @@ const lightbox = (() => {
   function show(i) {
     index = (i + items.length) % items.length;
     const foto = items[index];
+    resetZoom(false);
     img.src = asset(foto.imagem);
     img.alt = foto.titulo || 'Tatuagem';
     caption.replaceChildren(foto.estilo ? el('span', { text: foto.estilo }) : '', foto.titulo || '');
@@ -206,24 +207,132 @@ const lightbox = (() => {
   let swiped = false;
   dialog.addEventListener('click', (e) => {
     if (swiped) { swiped = false; return; }
-    if (e.target === dialog || e.target.tagName === 'FIGURE') dialog.close();
+    if (zoom === 1 && (e.target === dialog || e.target.tagName === 'FIGURE')) dialog.close();
   });
   dialog.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') show(index - 1);
     if (e.key === 'ArrowRight') show(index + 1);
   });
-  dialog.addEventListener('close', () => { document.body.style.overflow = ''; });
+  dialog.addEventListener('close', () => { document.body.style.overflow = ''; resetZoom(false); });
 
-  // arrastar para o lado no celular
-  let startX = null;
-  dialog.addEventListener('pointerdown', (e) => { startX = e.clientX; swiped = false; });
-  dialog.addEventListener('pointerup', (e) => {
-    if (startX == null) return;
-    const dx = e.clientX - startX;
-    swiped = Math.abs(dx) > 50;
-    if (swiped) show(index + (dx < 0 ? 1 : -1));
-    startX = null;
+  /* gestos: pinça e duplo toque ampliam, um dedo move a imagem ampliada,
+     e sem zoom deslizar para o lado troca de foto */
+  const ZOOM_MAX = 4;
+  const ZOOM_DUPLO_TOQUE = 2.5;
+  const toques = new Map();
+  let zoom = 1, tx = 0, ty = 0;
+  let gesto = null;
+  let ultimoToque = { t: 0, x: 0, y: 0 };
+
+  function aplicar(animado) {
+    img.style.transition = animado ? 'transform 0.25s ease' : 'none';
+    img.style.transform = zoom === 1 ? '' : `translate(${tx}px, ${ty}px) scale(${zoom})`;
+    dialog.classList.toggle('is-zoomed', zoom > 1);
+  }
+  function limitar() {
+    const mx = (img.offsetWidth * (zoom - 1)) / 2;
+    const my = (img.offsetHeight * (zoom - 1)) / 2;
+    tx = Math.max(-mx, Math.min(mx, tx));
+    ty = Math.max(-my, Math.min(my, ty));
+  }
+  function resetZoom(animado) { zoom = 1; tx = 0; ty = 0; aplicar(animado); }
+  // centro da imagem sem transformação, em coordenadas da tela
+  function centro() {
+    const r = img.getBoundingClientRect();
+    return { x: r.left + r.width / 2 - tx, y: r.top + r.height / 2 - ty };
+  }
+  // amplia mantendo fixo o ponto (px, py) da tela
+  function zoomEm(novo, px, py, animado) {
+    const c = centro();
+    const z = Math.min(ZOOM_MAX, Math.max(1, novo));
+    tx = px - c.x - ((px - c.x - tx) * z) / zoom;
+    ty = py - c.y - ((py - c.y - ty) * z) / zoom;
+    zoom = z;
+    if (zoom === 1) { tx = 0; ty = 0; }
+    limitar();
+    aplicar(animado);
+  }
+  const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+  const meio = (a, b) => ({ x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 });
+
+  function iniciarGesto() {
+    const [a, b] = [...toques.values()];
+    if (b) {
+      const m = meio(a, b);
+      const c = centro();
+      gesto = { tipo: 'pinca', d0: dist(a, b) || 1, z0: zoom, c, ux: (m.x - c.x - tx) / zoom, uy: (m.y - c.y - ty) / zoom };
+    } else if (a) {
+      gesto = { tipo: zoom > 1 ? 'mover' : 'deslizar', x0: a.x, y0: a.y, tx0: tx, ty0: ty };
+    } else {
+      gesto = null;
+    }
+  }
+
+  const figure = img.closest('figure');
+  figure.addEventListener('pointerdown', (e) => {
+    toques.set(e.pointerId, { x: e.clientX, y: e.clientY, naImagem: e.target === img });
+    swiped = false;
+    iniciarGesto();
   });
+  dialog.addEventListener('pointermove', (e) => {
+    const t = toques.get(e.pointerId);
+    if (!t || !gesto) return;
+    t.x = e.clientX;
+    t.y = e.clientY;
+    const [a, b] = [...toques.values()];
+    if (gesto.tipo === 'pinca' && b) {
+      const m = meio(a, b);
+      zoom = Math.min(ZOOM_MAX, Math.max(1, (gesto.z0 * dist(a, b)) / gesto.d0));
+      tx = m.x - gesto.c.x - gesto.ux * zoom;
+      ty = m.y - gesto.c.y - gesto.uy * zoom;
+      limitar();
+      aplicar(false);
+      swiped = true;
+    } else if (gesto.tipo === 'mover') {
+      tx = gesto.tx0 + a.x - gesto.x0;
+      ty = gesto.ty0 + a.y - gesto.y0;
+      limitar();
+      aplicar(false);
+      if (dist(a, { x: gesto.x0, y: gesto.y0 }) > 8) swiped = true;
+    }
+  });
+  function soltar(e) {
+    const p = toques.get(e.pointerId);
+    if (!p) return;
+    toques.delete(e.pointerId);
+    if (gesto?.tipo === 'deslizar' && !toques.size) {
+      const dx = p.x - gesto.x0;
+      const dy = p.y - gesto.y0;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+        swiped = true;
+        show(index + (dx < 0 ? 1 : -1));
+      } else if (Math.hypot(dx, dy) < 10 && p.naImagem) {
+        // duplo toque na imagem: amplia no ponto tocado ou volta ao normal
+        const agora = performance.now();
+        if (agora - ultimoToque.t < 300 && dist(p, ultimoToque) < 30) {
+          zoomEm(ZOOM_DUPLO_TOQUE, p.x, p.y, true);
+          swiped = true;
+          ultimoToque.t = 0;
+        } else {
+          ultimoToque = { t: agora, x: p.x, y: p.y };
+        }
+      }
+    } else if (gesto?.tipo === 'mover' && !toques.size && !swiped && p.naImagem) {
+      const agora = performance.now();
+      if (agora - ultimoToque.t < 300 && dist(p, ultimoToque) < 30) {
+        resetZoom(true);
+        swiped = true;
+        ultimoToque.t = 0;
+      } else {
+        ultimoToque = { t: agora, x: p.x, y: p.y };
+      }
+    }
+    if (zoom < 1.05 && zoom !== 1) resetZoom(true);
+    iniciarGesto();
+  }
+  dialog.addEventListener('pointerup', soltar);
+  dialog.addEventListener('pointercancel', soltar);
+  img.draggable = false;
 
   return {
     open(list, i) {

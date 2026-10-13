@@ -385,7 +385,7 @@ em { font-style: italic; color: var(--gold); }
 }
 .lightbox[open] { display: grid; animation: fade 0.3s var(--ease); }
 .lightbox::backdrop { background: transparent; }
-.lightbox figure { margin: 0; display: grid; justify-items: center; gap: 1rem; padding: 4rem 1rem 1.5rem; touch-action: pan-y; }
+.lightbox figure { margin: 0; display: grid; justify-items: center; gap: 1rem; padding: 4rem 1rem 1.5rem; touch-action: none; }
 .lightbox img { max-width: min(92vw, 1100px); max-height: calc(100dvh - 11rem); width: auto; object-fit: contain; border-radius: 8px; }
 .lightbox figcaption { font-family: var(--serif); font-size: 1.35rem; text-align: center; }
 .lightbox figcaption span { display: block; font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
@@ -679,3 +679,10 @@ em { font-style: italic; color: var(--gold); }
   }
 }
 @media (min-width: 701px) { .greview__more { display: none; } }
+
+/* zoom do lightbox (pinça / duplo toque) */
+.lightbox img { transform-origin: center; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.lightbox.is-zoomed img { cursor: grab; }
+.lightbox .round { z-index: 3; }
+.lightbox figcaption { transition: opacity 0.2s; }
+.lightbox.is-zoomed figcaption { opacity: 0; }
