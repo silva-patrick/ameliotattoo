@@ -1,6 +1,11 @@
 {
   "fotos": [
     {
+      "imagem": "/images/amelio-galeria/d4d7b192-eea2-46e6-b91e-5f867f353323.webp",
+      "titulo": "Floral com pássaro",
+      "estilo": "Floral"
+    },
+    {
       "imagem": "/images/amelio-galeria/img_1821.webp",
       "titulo": "Lirios",
       "estilo": "Floral"
