@@ -11,6 +11,11 @@ window.SITE_DATA = {
   "galeria": {
   "fotos": [
     {
+      "imagem": "/images/amelio-galeria/0cd317c7-3aa1-4ada-a434-c5e293c0141d.webp",
+      "titulo": "Floral",
+      "estilo": "Floral"
+    },
+    {
       "imagem": "/images/amelio-galeria/d4d7b192-eea2-46e6-b91e-5f867f353323.webp",
       "titulo": "Floral com pássaro",
       "estilo": "Floral"
